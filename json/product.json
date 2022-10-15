@@ -1,0 +1,16 @@
+{
+    "Men": [
+        {
+            "id": 1,
+            "title": "Men title 1",
+            "description": "Men description 1",
+            "image": "men1.png"
+        },
+        {
+            "id": 2,
+            "title": "Men title 2",
+            "description": "Men description 2",
+            "image": "men2.png"
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import "base";
+}
+
+@layer components {
+  @import "components";
+  @import "navigation";
+  @import "buttons";
+}
+
+@layer utilities {
+  @import "utilities";
+}
+
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  .productContainer {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow .3s;
+    .title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 21px rgb(33 33 33 / 20%)
+    }
+  }
+}
+.modalWrapper {
+  z-index:51;
+	width : 100%;
+	top: 0;
+	height: 100%;
+  position:absolute;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+  background-color: hsla(0,0%,6%,.7)!important;
+  .modalContainer{
+    animation: popup 0.4s;
+    margin: 0 20px;
+    background-color: white;
+    display:flex;
+    // align-items: center;
+    flex-direction:column;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    .detail {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      .modalTitle {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .close {
+        align-self: flex-end;
+        margin: 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+    .productImage {
+      flex: 1 1 0;
+      justify-content: center;
+      display: flex;
+      height: calc(80vh - 50px);
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+@keyframes popup {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+  
+}
+.order-0 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.aboutUs {
+  font-size: 20px;
+  white-space: pre-line;
+  text-align: center;
+}
