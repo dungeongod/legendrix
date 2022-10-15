@@ -1,0 +1,26 @@
+{
+  "main": [
+    {
+      "name": "About",
+      "url": "/"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    },
+    {
+      "name": "Categories",
+      "url": "/categories"
+    }
+  ],
+  "footer": [
+    {
+      "name": "About",
+      "url": "/"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ]
+}

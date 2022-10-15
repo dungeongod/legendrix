@@ -1,0 +1,26 @@
+{
+  "site": {
+    "title": "Site Title",
+    "base_url": "/",
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_width": "200",
+    "logo_height": "34",
+    "logo_text": ""
+  },
+
+  "settings": {
+    "summary_length": 200
+  },
+
+  "params": {
+    "tag_manager_id": "",
+    "copyright": "Copyright © 2022"
+  },
+
+  "metadata": {
+    "meta_author": "",
+    "meta_image": "",
+    "meta_description": ""
+  }
+}
