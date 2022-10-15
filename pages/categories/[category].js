@@ -2,8 +2,9 @@ import Base from "@layouts/Baseof";
 import Image from "next/image";
 import product from '@json/product.json'
 import { useEffect, useState } from "react";
+import Link from "next/link";
 // category page
-const Category = ({ category }) => {
+const Category = ({ category,categories }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalData, setModaldata] = useState();
   const openModal = (data) => {
@@ -22,9 +23,20 @@ const Category = ({ category }) => {
   return (
     <Base title={category}>
       <div className="section">
-        <div className="container">
+        <div className="container text-center">
+        <ul className="space-x-4 mb-8">
+            {categories.map((cat, i) => (
+              <li key={`category-${i}`} className="inline-block">
+                <Link href={`/categories/${cat}`} passHref>
+                  <a className={`sub-category bg-theme-light rounded-lg px-4 py-2 text-dark transition hover:bg-primary hover:text-white ${cat == category && 'selected'}`}>
+                    &#8226; {cat}
+                  </a>
+                </Link>
+              </li>
+            ))}
+          </ul>
           <div className="h2 mb-8 text-center">
-            Showing posts from <span className="text-primary">{category}</span>{" "}
+            Showing posts from <span className="sub-cat text-primary ">{category}</span>{" "}
             category
           </div>
           <div className="productsContainer">
@@ -86,7 +98,7 @@ export default Category;
 
 // category page routes
 export const getStaticPaths = () => {
-  const allCategories =['Men', 'Women','Children'];
+  const allCategories =['Men', 'Women','Kids'];
 
   const paths = allCategories.map((category) => ({
     params: {
@@ -101,6 +113,7 @@ export const getStaticPaths = () => {
 export const getStaticProps = ({ params }) => {
  
   return {
-    props: {  category: params.category },
+    props: {  category: params.category,
+      categories: ['Men', 'Women','Kids'] },
   };
 };

@@ -11,8 +11,7 @@ const Categories = ({ categories }) => {
       <div className="container">
         {markdownify('About us', "h1", "h2 mb-8 text-center")}
         <div className="aboutUs">
-        {`Legendrix is a sports brand managed by elite professionals with over 15 years of experience, now storming into sports.
-    The brand is bound to soar high in a short span of time as the experienced bunch has got exceptional creative minds that will result in innovative and futuristic products at very cost effective prices.\n
+        {`Legendrix is a sports brand managed by elite professionals with over 15 years of experience, now storming into sports. The brand is bound to soar high in a short span of time as the experienced bunch has got exceptional creative minds that will result in innovative and futuristic products at very cost effective prices.\n
     We believe in ethical business and our focus is to provide the product of the best quality and of the latest trend and style to our customers.`}
         </div>
 

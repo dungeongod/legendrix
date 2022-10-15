@@ -1,21 +1,21 @@
 {
   "main": [
     {
-      "name": "About",
+      "name": "About Us",
       "url": "/"
-    },
-    {
-      "name": "Contact",
-      "url": "/contact"
     },
     {
       "name": "Categories",
       "url": "/categories"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
     }
   ],
   "footer": [
     {
-      "name": "About",
+      "name": "About Us",
       "url": "/"
     },
     {

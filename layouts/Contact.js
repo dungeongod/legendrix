@@ -1,4 +1,6 @@
 import { markdownify } from "@lib/utils/textConverter";
+import Image from "next/image";
+import { IoLogoWhatsapp } from "react-icons/io5";
 
 const Contact = ({ data }) => {
 
@@ -6,7 +8,11 @@ const Contact = ({ data }) => {
     <section className="section">
       <div className="container max-w-[700px]">
         {markdownify('Contact Us', "h1", "h2 mb-8 text-center")}
-        <form className="contact-form">
+        <div className="contactWrapper">
+<a target={"_blank"} href="https://wa.me/+919811547837"><IoLogoWhatsapp/>
+          &nbsp;  +919811547837</a>
+        </div>
+        {/* <form className="contact-form">
           <div className="mb-6">
             <label className="mb-2 block" htmlFor="name">
               Name
@@ -47,7 +53,7 @@ const Contact = ({ data }) => {
             <textarea className="form-textarea w-full" rows="7" />
           </div>
           <button className="btn btn-outline-primary">Submit Now</button>
-        </form>
+        </form> */}
       </div>
     </section>
   );

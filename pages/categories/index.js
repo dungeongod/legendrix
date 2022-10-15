@@ -31,7 +31,7 @@ export const getStaticProps = () => {
 
   return {
     props: {
-      categories: ['Men', 'Women','Children'],
+      categories: ['Men', 'Women','Kids'],
     },
   };
 };

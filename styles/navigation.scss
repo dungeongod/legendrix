@@ -31,7 +31,11 @@ input#nav-toggle:checked ~ #nav-menu {
 .nav-link {
   @apply p-3 text-lg font-semibold text-dark transition hover:text-primary md:p-4;
 }
-
+.nav-link {
+  &:hover {
+    color: black
+  }
+}
 .nav-dropdown {
   @apply mr-0;
 }
