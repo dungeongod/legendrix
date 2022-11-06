@@ -28,6 +28,8 @@ const About = ({ data }) => {
         <div className="content">
           <MDXRemote {...mdxContent} components={shortcodes} />
         </div>
+
+
       </div>
     </section>
   );

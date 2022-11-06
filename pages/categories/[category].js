@@ -3,6 +3,7 @@ import Image from "next/image";
 import product from '@json/product.json'
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Modal from "@layouts/components/popupModal";
 // category page
 const Category = ({ category,categories }) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -13,6 +14,7 @@ const Category = ({ category,categories }) => {
       setModaldata();
     }
     else {
+      window.scrollTo(0,0)
       setModalOpen(true);
       setModaldata(data);
     }
@@ -61,32 +63,7 @@ const Category = ({ category,categories }) => {
           </div>
         </div>
         {modalOpen && 
-        <div className="modalWrapper">
-            <div className="modalContainer">
-              <div className="detail">
-                <div className="modalTitle">
-                    {modalData.title}
-                  </div>
-                <div className="close" onClick={() => openModal()}>
-                  <Image
-                        src={`/images/cross.svg`}
-                        width={18}
-                        height={18}
-                        alt={'close'}
-                        className="rounded-lg"
-                  />
-                </div>
-              </div>
-              <div className="productImage">
-                <img
-                        src={`/images/products/${category.toLowerCase()}/${modalData.image}`}
-                        
-                        alt={'close'}
-                        className="rounded-lg"
-                  />
-              </div>
-            </div>
-        </div>
+        <Modal openModal={openModal} modalData={modalData} category={category}/>
          
         }
       </div>

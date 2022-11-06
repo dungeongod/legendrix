@@ -1,6 +1,6 @@
 import { markdownify } from "@lib/utils/textConverter";
 import Image from "next/image";
-import { IoLogoWhatsapp } from "react-icons/io5";
+import { IoLogoWhatsapp, IoMailOpenOutline } from "react-icons/io5";
 
 const Contact = ({ data }) => {
 
@@ -11,6 +11,8 @@ const Contact = ({ data }) => {
         <div className="contactWrapper">
 <a target={"_blank"} href="https://wa.me/+919811547837"><IoLogoWhatsapp/>
           &nbsp;  +919811547837</a>
+          <a href="mailto:Shekhar.chakravarty@gmail.com"><IoMailOpenOutline/>
+          &nbsp;  Shekhar.chakravarty@gmail.com.com</a>
         </div>
         {/* <form className="contact-form">
           <div className="mb-6">

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "image": "testimonial1.png",
+        "name": "Theo Sorel",
+        "position": "Designer",
+        "data": "It's freeing to be able to catch up on customized news and not be distracted by a social media element on the same site"
+    },
+    {
+        "id": 2,
+        "image": "testimonial2.png",
+        "name": "Daniel Keystone",
+        "position": "Designer",
+        "data": "The simple and intuitive design makes it easy for me use. I highly recommend Fetch to my peers."
+    },
+    {
+        "id": 3,
+        "image": "testimonial3.png",
+        "name": "Shirley Fultz",
+        "position": "Designer",
+        "data": "I enjoy catching up with Fetch on my laptop, or on my phone when I'm on the go!"
+    }
+]
