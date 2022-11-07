@@ -15,7 +15,9 @@
 @layer utilities {
   @import "utilities";
 }
-
+#my-zoomist {
+  padding-bottom: unset !important;
+}
 .productsContainer {
   display: flex;
   flex-wrap: wrap;
@@ -142,6 +144,10 @@ h1 {
 .carousel .slide {
   // background: #fff !important;
   color: black;
+  
+  background: #757575;
+  padding: 20px;
+
   height: 100%;
 }
 
@@ -244,7 +250,15 @@ h1 {
 .App {
   text-align: center;
 }
-
+.zoomist-in-zoomer, .zoomist-out-zoomer {
+  background-color: rgb(215 207 207 / 80%);
+  &:hover {
+    background-color: rgb(224 224 224 / 90%);
+  }
+}
+.zoomist-slider-button::before {
+  background-color: black;
+}
 
 @media only screen and (max-width: 934px) {
   .productsContainer {
@@ -264,7 +278,7 @@ h1 {
   }
   .myCarousel {
     // background: #fafafa;
-    margin-top: -9%;
+    // margin-top: -9%;
     width: 88%;
     margin-left: auto;
     margin-right: auto;
