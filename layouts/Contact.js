@@ -11,8 +11,8 @@ const Contact = ({ data }) => {
         <div className="contactWrapper">
 <a target={"_blank"} href="https://wa.me/+919811547837"><IoLogoWhatsapp/>
           &nbsp;  +919811547837</a>
-          <a href="mailto:Shekhar.chakravarty@gmail.com"><IoMailOpenOutline/>
-          &nbsp;  Shekhar.chakravarty@gmail.com.com</a>
+          <a href="mailto:sales@zealenterpises.co"><IoMailOpenOutline/>
+          &nbsp;  sales@zealenterpises.co</a>
         </div>
         {/* <form className="contact-form">
           <div className="mb-6">
